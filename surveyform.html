@@ -1,0 +1,68 @@
+<head>
+  <link rel="stylesheet" type="text/css" href="covid.css">
+  <title>Covid Survey Form</title>
+</head>
+<body>
+<main class="container">
+  <h1 id="title">Coronavirus Rapid-self Detection</h1>
+  <p id="description">COVID-19 Rapid Self-Detection is one way to help speed up action whether you are healthy or have symptoms that require further examination and testing regarding COVID-19</p>
+  <form id="survey-form">
+    <div class="form.group">
+      <label id= "name-label"for="name">
+        Name
+      </label>
+      <input id="name" class="form-control" type="text" name="name" placeholder="Enter your name" required="">
+    </div>
+    <div class="form-group">
+      <label id="email-label" for="email">
+        Email
+      </label>
+      <input id="email" class="form-control" type="email" name="email" placeholder="Enter your Email address" required="">
+    </div>
+    <div class="form-group">
+      <label id="number-label"for="number">
+        Age
+      </label>
+      <input id="number" class="form-control" type="number" name="Age" min="15" max="50" placeholder="Age" required="">
+    </div>
+    <div class="form-group">
+      <p>Have you ever traveled abroad</p>
+      <select id="dropdown" class="form-control" name="yesno" required>
+        <option disabled="" selected="" value=""></option>
+        <option value="yes">Yes</option>
+        <option value="no">No</option>
+    </select>
+    </div>
+    <div class="form-group">
+      <p>Wether you have a history of contact with patient or suspect COVID-19?</p>
+      <label>
+        <input name="contact-history" value="yes" type="radio" class="input-radio" checked="">Yes</label>
+      <label>
+        <input name="contact-history" value="no" type="radio" class="input-radio">No</label>
+      <label>
+        <input name="contact-history" value="probably" type="radio" class="input-radio">Probably</label>
+    <label>
+        <input name="contact-history" value="not-sure" type="radio" class="input-radio">Not Sure</label>
+    </div>
+  <div class="form-group">
+    <p>what symptoms do you have</p>
+    <label>
+      <input class="input-checkbox" name="symptoms" value="cough" type="checkbox">Cough
+    </label>
+    <label>
+      <input class="input-checkbox" name="symptoms" value="fever" type="checkbox">Fever
+    </label>
+    <label>
+      <input class="input-checkbox" name="symptoms" value="out-of-breath" type="checkbox">Out of Breath
+    </label>
+    <label>
+      <input class="input-checkbox" name="symptoms" value="sore-throat" type="checkbox">Sore Throat
+    </label>
+   </div>
+   <div class="form-group">
+      <p>If you have questions related to Covid 19, please write them below</P>
+      <textarea id="questions" class="input-textarea" name="questions" placeholder="Enter your questions here..."></textarea>
+   </div>
+  </form>
+</main>
+</body>
